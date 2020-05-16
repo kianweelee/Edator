@@ -36,7 +36,7 @@
    $ python main.py
    ```
 6. You should see the following:
-![](https://imgur.com/KtamL2O)
+![](https://github.com/kianweelee/Edator/blob/master/Image/Screen%20Shot%202020-05-16%20at%204.45.48%20pm.png)
 
 7. Choose the csv file, the path to export the plots, the report and the cleaned csv file to.
 8. Done!
