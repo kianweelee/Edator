@@ -13,7 +13,6 @@
 - seaborn==0.10.0
 - statsmodels==0.11.1
 - more-itertools==8.3.0
-- Internet connection
 
 ### How to set up? (**Important!**)
 1. You can clone or download my package.
