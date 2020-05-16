@@ -2,9 +2,6 @@ matplotlib==3.1.2
 numpy==1.18.1
 pandas==1.0.0
 PySimpleGUI==4.8.0
-python-dateutil==2.8.1
-python-editor==1.0.4
-python-language-server==0.31.10
 scikit-learn==0.22.1
 scipy==1.4.1
 seaborn==0.10.0
