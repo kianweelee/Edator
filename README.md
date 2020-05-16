@@ -65,3 +65,7 @@ For plots, I created:
 2. Countplot for categorical variables
 3. Boxplot for numerical-categorical variables
 Similar to correlation, I used itertools.combinations to create every possible plot. I have also added the hue feature to each scatterplot. I will only do so when the categorical variable has less than 5 unique values. Example, if hue = "fruits", I should only see 4 types of fruits.
+
+### Upcoming changes
+1. Upon obtaining sufficient feedback on this script, I will register this package in PyPI to streamline installation.
+2. Instead of generating txt reports, I will utilise HTML and Bootstrap to generate a much more appeasing look.
