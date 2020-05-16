@@ -1,0 +1,10 @@
+os
+pandas
+matplotlib
+seaborn
+PySimpleGUI
+sklearn
+numpy
+scipy
+statsmodels
+itertools
