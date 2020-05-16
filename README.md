@@ -7,7 +7,7 @@
 - matplotlib==3.1.2
 - numpy==1.18.1
 - pandas==1.0.0
-- PySimpleGUI==4.8.0
+- PySimpleGUI==4.19.0
 - scikit-learn==0.22.1
 - scipy==1.4.1
 - seaborn==0.10.0
