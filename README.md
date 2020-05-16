@@ -8,7 +8,6 @@
 - numpy==1.18.1
 - pandas==1.0.0
 - PySimpleGUI==4.8.0
-- python-dateutil==2.8.1
 - scikit-learn==0.22.1
 - scipy==1.4.1
 - seaborn==0.10.0
@@ -40,3 +39,30 @@
 
 7. Choose the csv file, the path to export the plots, the report and the cleaned csv file to.
 8. Done!
+
+## The concept behind Edator
+
+### Dealing with NaN values and zeros
+How I deal with NaN value is that I only remove the affected rows when the percentage of NaN within that column is **less than 5%**. This applies to both numerical and categorical values. For anything above 5%, I replace the NaN values with median. For categorical values, the NaN values will be replace by mode.
+
+Dealing with zeros is much harder as it is challenging to differentiate between a zero that is meaningful (has a purpose and should not be removed) and a zero that serves no purpose and can potentially add more noise to the dataset. Hence, I decided to inform the user about the percentage of zeros in the dataset.
+
+### Processing outliers
+I use Z-score to detect outliers. If a Z-score is 0, it indicates that the data point’s score is identical to the mean score. A Z-score of 1.0 would indicate a value that is one standard deviation from the mean. Z-scores may be positive or negative, with a positive value indicating the score is above the mean and a negative score indicating it is below the mean.
+
+In most cases, a threshold of 3 or -3 is used to filter off outliers and I have used this approach for all of my analysis.
+
+### Correlation
+For correlation, I included:
+1. Pearson and Spearman correlation for numerical-numerical variables.
+2. One Way ANOVA for numerical-categorical variables
+3. Chi-Square test for categorical-categorical variables
+
+Using itertools.combinations, I identify every possible combinations among numerical-numcerical variables, numerical-categorical variables and categorical-categorical variables. I then apply the correlation test based on the criteria I have set above.
+
+### Plots
+For plots, I created:
+1. Scatterplot for numerical variables
+2. Countplot for categorical variables
+3. Boxplot for numerical-categorical variables
+Similar to correlation, I used itertools.combinations to create every possible plot. I have also added the hue feature to each scatterplot. I will only do so when the categorical variable has less than 5 unique values. Example, if hue = "fruits", I should only see 4 types of fruits.
