@@ -40,11 +40,11 @@ def run(data,categorical_variable,numerical_variable, num_var_combination,cat_va
         fig2.savefig(plot_path + "/{}_countplot.png".format(j))
         fig2.clf()
 
-    ## Using barplot for numerical + Categorical data
+    ## Using boxplot for numerical + Categorical data
     for k in catnum_combination:
         num1 = k[0]
         cat1 = k[1]
-        plot3 = sns.barplot(data = data, x = cat1, y = num1)
+        plot3 = sns.boxplot(data = data, x = cat1, y = num1)
         fig3 = plot3.get_figure()
         fig3.savefig(plot_path + "/{}_{}_barplot.png".format(num1,cat1))
         fig3.clf()
