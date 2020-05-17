@@ -64,6 +64,7 @@ For plots, I created:
 1. Scatterplot for numerical variables
 2. Countplot for categorical variables
 3. Boxplot for numerical-categorical variables
+
 Similar to correlation, I used itertools.combinations to create every possible plot. I have also added the hue feature to each scatterplot. I will only do so when the categorical variable has less than 5 unique values. Example, if hue = "fruits", I should only see 4 types of fruits.
 
 ### Upcoming changes
