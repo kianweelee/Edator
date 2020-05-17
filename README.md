@@ -57,7 +57,7 @@ For correlation, I included:
 2. One Way ANOVA for numerical-categorical variables
 3. Chi-Square test for categorical-categorical variables
 
-Using itertools.combinations, I identify every possible combinations among numerical-numcerical variables, numerical-categorical variables and categorical-categorical variables. I then apply the correlation test based on the criteria I have set above.
+Using itertools.combinations, I identify every possible combinations among numerical-numerical variables, numerical-categorical variables and categorical-categorical variables. I then apply the correlation test based on the criteria I have set above.
 
 ### Plots
 For plots, I created:
