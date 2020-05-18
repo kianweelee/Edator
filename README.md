@@ -1,3 +1,4 @@
+![](https://raw.githubusercontent.com/kianweelee/Edator/master/Image/eau%20de%20parfum.png)
 # Edator
  This is a python package that performs exploratory data analysis for users. It takes in a csv file and generates 3 documents that comprise of a text report containing a descriptive summary, a series of plots and a cleaned csv output.
  
