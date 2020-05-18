@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
     ## Look into making count plots for categorical data
     ## Look into making scatterplots and barplot for numerical data
     ## Export plots into plot path
-def run(data,categorical_variable,numerical_variable, num_var_combination,cat_var_combination,catnum_combination,plot_path):
+def run(data,categorical_variable,numerical_variable,plot_path):
 
     ## Set Unique categorical values that are < 5 as hue
     hue_lst = []
@@ -21,16 +21,25 @@ def run(data,categorical_variable,numerical_variable, num_var_combination,cat_va
     ## Creating possible combinations among a list of numerical and categorical variuable
     catnum_combination = list(itertools.product(numerical_variable, categorical_variable))
 
-    ## Using regplot for numerical-numerical variables
-    num_var_hue_combination = list(itertools.product(num_var_combination, hue_lst))
-    for i in num_var_hue_combination:
-        var1 = i[0][0]
-        var2 = i[0][1]
-        hue1 = i[1]
-        plot1 = sns.scatterplot(data = data, x = var1, y = var2, hue = hue1)
-        fig1 = plot1.get_figure()
-        fig1.savefig(plot_path + "/{} vs {} by {} scatterplot.png".format(var1,var2, hue1))
-        fig1.clf()
+    ## Using scatterplot for numerical-numerical variables
+    if len(categorical_variable) > 1:    
+        num_var_hue_combination = list(itertools.product(num_var_combination, hue_lst))
+        for i in num_var_hue_combination:
+            var1 = i[0][0]
+            var2 = i[0][1]
+            hue1 = i[1]
+            plot1 = sns.scatterplot(data = data, x = var1, y = var2, hue = hue1)
+            fig1 = plot1.get_figure()
+            fig1.savefig(plot_path + "/{} vs {} by {} scatterplot.png".format(var1,var2, hue1))
+            fig1.clf()
+    else:
+        for l in num_var_combination:
+            var1 = l[0]
+            var2 = l[1]
+            plot1 = sns.scatterplot(data = data, x = var1, y = var2)
+            fig1 = plot1.get_figure()
+            fig1.savefig(plot_path + "/{} vs {} scatterplot.png".format(var1,var2))
+            fig1.clf()
 
 
     ## Using countplot for categorical data

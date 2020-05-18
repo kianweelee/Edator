@@ -138,7 +138,7 @@ def main():
     data2.to_csv(r'{}/cleaned_csv.csv'.format(clean_csv_path), index = False)
 
     # Running plot.py from Graph package
-    plot.run(data, categorical_variable,numerical_variable,num_var_combination, cat_var_combination, catnum_combination, plot_path)
+    plot.run(data, categorical_variable,numerical_variable,plot_path)
 
 
 
