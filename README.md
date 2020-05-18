@@ -57,13 +57,14 @@ For correlation, I included:
 2. One Way ANOVA for numerical-categorical variables
 3. Chi-Square test for categorical-categorical variables
 
-Using itertools.combinations, I identify every possible combinations among numerical-numcerical variables, numerical-categorical variables and categorical-categorical variables. I then apply the correlation test based on the criteria I have set above.
+Using itertools.combinations, I identify every possible combinations among numerical-numerical variables, numerical-categorical variables and categorical-categorical variables. I then apply the correlation test based on the criteria I have set above.
 
 ### Plots
 For plots, I created:
 1. Scatterplot for numerical variables
 2. Countplot for categorical variables
 3. Boxplot for numerical-categorical variables
+
 Similar to correlation, I used itertools.combinations to create every possible plot. I have also added the hue feature to each scatterplot. I will only do so when the categorical variable has less than 5 unique values. Example, if hue = "fruits", I should only see 4 types of fruits.
 
 ### Upcoming changes
