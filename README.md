@@ -1,6 +1,8 @@
 ![](https://raw.githubusercontent.com/kianweelee/Edator/master/Image/eau%20de%20parfum.png)
+[![CodeFactor](https://www.codefactor.io/repository/github/kianweelee/edator/badge)](https://www.codefactor.io/repository/github/kianweelee/edator)
 # Edator
- This is a python package that performs exploratory data analysis for users. It takes in a csv file and generates 3 documents that comprise of a text report containing a descriptive summary, a series of plots and a cleaned csv output.
+
+This is a python package that performs exploratory data analysis for users. It takes in a csv file and generates 3 documents that comprise of a text report containing a descriptive summary, a series of plots and a cleaned csv output.
  
 ## Set up
 ### Dependencies 
