@@ -4,7 +4,7 @@
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 [![CodeFactor](https://www.codefactor.io/repository/github/kianweelee/edator/badge)](https://www.codefactor.io/repository/github/kianweelee/edator)
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
-![](https://img.shields.io/bitbucket/issues-raw/kianweelee/sqlake)
+![](https://img.shields.io/bitbucket/issues-raw/kianweelee/Edator)
 [![](https://img.shields.io/github/v/release/kianweelee/edator)](https://github.com/kianweelee/Edator/releases)
 ![](https://img.shields.io/github/last-commit/kianweelee/edator)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/kianweelee/Edator/pulls)
