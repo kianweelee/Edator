@@ -45,7 +45,8 @@ This is a python package that performs exploratory data analysis for users. It t
    $ python main.py
    ```
 6. You should see the following:
-![](https://github.com/kianweelee/Edator/blob/master/Image/Screen%20Shot%202020-05-16%20at%204.45.48%20pm.png)
+
+![](https://github.com/kianweelee/Edator/blob/master/Image/Screen%20Shot%202020-06-11%20at%208.32.55%20pm.png)
 
 7. Choose the csv file, the path to export the plots, the report and the cleaned csv file to.
 8. Done!
