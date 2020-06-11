@@ -53,7 +53,7 @@ def main():
     if csv_option:
     	data = pd.read_csv(file_path)
     else:
-    	data = pd.read_excel(file_path, index_col=0)
+    	data = pd.read_excel(file_path, index_col = None)
 
     # Create a function to separate out numerical and categorical data
         ## Using this function to ensure that all non-numerical in a numerical column
