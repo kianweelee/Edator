@@ -29,8 +29,10 @@ def main():
         ## Required to create a GUI using pySimpleGUI
 
     layout = [
+    [sg.Frame(layout=[
+    [sg.Radio('CSV', "file_format", default=True, size=(10,1)), sg.Radio('XLS', "file_format")]], title='File Format',title_color='red', relief=sg.RELIEF_SUNKEN)],
     [sg.Text('Please input the folder path')],
-    [sg.Text('CSV File:', size=(18, 1)), sg.Input(), sg.FileBrowse()],
+    [sg.Text('File path:', size=(18, 1)), sg.Input(), sg.FileBrowse()],
     [sg.Text('Export plots to:', size=(18, 1)), sg.Input(), sg.FolderBrowse()],
     [sg.Text('Export report to:', size=(18, 1)), sg.Input(), sg.FolderBrowse()],
     [sg.Text('Export cleaned csv to:', size=(18, 1)), sg.Input(), sg.FolderBrowse()],
@@ -39,14 +41,19 @@ def main():
     window = sg.Window('Edator', layout)
 
     event, values = window.read()
-    csv_path, plot_path, report_path, clean_csv_path = values[0], values[1], values[2], values[3]
+    csv_option, xls_option, file_path, plot_path, report_path, clean_csv_path = values[0], values[1], values[2], values[3], values[4], values[5]
+    print(values[0])
+    print(values[1])
     window.close()
 
     # Creating a txt file in the report_path
     filename = os.path.join(report_path, "report" + ".txt")
 
     # Assigning csv file to a variable call 'data'
-    data = pd.read_csv(csv_path)
+    if csv_option:
+    	data = pd.read_csv(file_path)
+    else:
+    	data = pd.read_excel(file_path, index_col=0)
 
     # Create a function to separate out numerical and categorical data
         ## Using this function to ensure that all non-numerical in a numerical column
