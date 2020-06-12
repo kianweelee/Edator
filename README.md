@@ -48,7 +48,8 @@ This is a python package that performs exploratory data analysis for users. It t
 
 ![](https://github.com/kianweelee/Edator/blob/master/Image/Screen%20Shot%202020-06-11%20at%208.32.55%20pm.png)
 
-7. Choose the csv file, the path to export the plots, the report and the cleaned csv file to.
+7. Choose the format of the file (csv or xls), the path to the file and the paths to export the plots, the report and the cleaned csv file to.
+
 8. Done!
 
 ## The concept behind Edator
