@@ -81,5 +81,6 @@ For plots, I created:
 Similar to correlation, I used itertools.combinations to create every possible plot. I have also added the hue feature to each scatterplot. I will only do so when the categorical variable has less than 5 unique values. Example, if hue = "fruits", I should only see 4 types of fruits.
 
 ### Upcoming changes for version 0.3
-1. Take in more file outputs beyond CSV
+1. Take in more file outputs beyond CSV and Excel
 2. Gathering user input, I will increase the variety of plots beyond scatterplots, barplots and boxplots.
+3. Report generated will be in HTML format. 
